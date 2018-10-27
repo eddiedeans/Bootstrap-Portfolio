@@ -154,42 +154,6 @@ header .githubLink {
     display: none;
 }
 
-@media only screen and (min-width:1000px) {
-    header .brandHeader {
-    margin: 31px 0;
-    text-align: left;
-    padding: 0px 20px 0px 40px;
-    border-right: 3px solid #000;
-    float: left;
-    line-height: 38px;
-    }
-
-    header nav ul {
-        margin: 20px 0 0 0px;
-        float: LEFT;
-    }
-    
-    header nav ul li a{
-        
-        line-height: 60px;
-    }
-
-    header .githubLink {
-        display: block;
-        font-family: 'Catamaran';
-        font-size: 16px;
-        color: #111;
-        font-weight: 0;
-        text-transform: uppercase;
-        line-height: 38px;
-        border: 3px solid #111;
-        float: right;
-        margin-right: 40px;
-        padding: 0 40px;
-        margin-top: 29.5px;
-    }
-}
-
 /* Banner */
 
 .banner {
@@ -266,7 +230,7 @@ header .githubLink {
 } */
 
 /* About ME Section */
-.linkContainer {
+.Container {
     /* background: #363636; */
     background-image: linear-gradient(#363636, #fff);
     padding: 5%;
@@ -329,7 +293,7 @@ header .githubLink {
 .myHeadShot {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 40%;
     margin-bottom: 2em;
 }
 
@@ -496,15 +460,19 @@ footer {
     padding: 40px 40px;
     background-image: linear-gradient(to top,#363636, #fff);
     overflow: hidden;
-    margin-top: 5%
+    margin-top: 5%;
 }
 
-footer ul li {
+footer div ul {
+    width: 100%;
+}
+
+footer div ul li {
     display: block;
     list-style: none;
 }
 
-footer ul li a {
+footer div ul li a {
     font-family: "Catamaran";
     font-size: 24px;
     color: #fff;
@@ -512,16 +480,16 @@ footer ul li a {
     text-shadow: 2px 2px 8px #111;
 }
 
-.footerLinks {
-
+.footerImg {
+    text-align: center;
 }
 
-.footerImgStyle {
-    width: 50px;
-    float: left;
+.footerImg div {
+    display: inline-block;
 }
 
-.footerImgStyle img {
-    width: 100%;
-    margin-bottom: 10px;
+.footerImg a img {
+    width: 30%;
+    height: 30%; 
+    margin: 0 auto;
 }

@@ -1,0 +1,62 @@
+/* Media Queries */
+
+@media only screen and (min-width:600px) {
+    header .brandHeader {
+    margin: 31px 0;
+    text-align: left;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #000;
+    float: left;
+    line-height: 38px;
+    }
+
+    header nav ul {
+        margin: 20px 0 0 0px;
+        float: LEFT;
+    }
+    
+    header nav ul li a{
+        
+        line-height: 60px;
+    }
+
+    header .githubLink {
+        display: block;
+        font-family: 'Catamaran';
+        font-size: 16px;
+        color: #111;
+        font-weight: 0;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 3px solid #111;
+        float: right;
+        margin-right: 40px;
+        padding: 0 40px;
+        margin-top: 29.5px;
+    }
+}
+
+@media only screen and (min-width:982px) {
+    .myHeadShot {
+        /* display: block; */
+        /* margin: auto; */
+        width: 30%;
+        /* margin-bottom: 2em; */
+        /* float: right; */
+    }
+
+    .eachSection {
+        background: #c4d1de;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #9b9b9b;
+        box-shadow: 0px 12px 26px 3px rgba(0,0,0,0.75);
+    }
+
+    .eachContainer {
+        /* margin: 0em 2em 1em 2em; */
+        padding: 2em;
+        fl
+        
+    }
+}

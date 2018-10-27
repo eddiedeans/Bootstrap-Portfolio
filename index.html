@@ -1,85 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Eddie's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./styles/reset.css"/>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mediaQueries.css">
+
 </head>
-
-<nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Eddie Borja</a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          
-            <ul class="nav navbar-nav navbar-right">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                            <a class="nav-link" href="./index.html">About<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-
 <body>
-
-    <div class="container">
-            <div class="row">
-                <div class="col-12 heading">
-                About Me
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 paragragh">
-                    <img src="./images/unnamed.jpg" height="200px" width="200px" class="catPicture">
-
-                    <p>Hello, welcome to my portfolio webpage. My name is Eddie Borja. I've recently enrolled with 
-                        UCI Coding Bootcamp and so far its been exciting. Two weeks ago I didnt feel very comfortable 
-                        with HTML and CSS but its getting easier. My teachers are always great at explaining things and 
-                        make it fun to learn.
-                        <br>
-                        <br>
-                        There are two big reason why i joined this bootcamp. Firstly, I have alot of
-                        personal ideas for websites. I spend alot of time on the internet and always find my 
-                        self asking "why hasn't anyone created a website for that already?". Secondly, working to 
-                        create amazing websites with a team that is likeminded excites me. Working as a team really helps 
-                        me learn new things.  
-                    </p>
-                </div>
-            </div>
-    </div>
-    
-
-    <div id="footer">
-        <div class="container">
-            <span class="copyright">Copyright</span>
+    <header>
+        <a href="index.html" class='brandHeader' id="home">Eddie Borja</a>
+        <nav>
+            <ul>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#aboutMe">About Me</a></li>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#skills">Skills</a></li>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#pastProjects">Portfolio</a></li>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="verticalCenter">
+                <h2>Welcome!<br>I am a<br>Web Developer</h2>
+                <h1>“Engineering is the closest thing to magic that exists in the world.” <br>-Elon Musk</h1>
+            </div> 
         </div>
-      </div>
-</body>
+        <div class="Container">
+            <div class="eachSection borderRad">
+                <img class="myHeadShot" src="./images/images/generic-placeholder-person.png" alt="person">
+                <div class="eachContainer" id="aboutMe">
+                    <h3 class="eachHeader">About Me</h3>
+                    <p class="eachText">Hello, welcome to my site. My name is Eddie Borja. I spend alot of time on the internet and always find my self asking "Why hasn't anyone created a website for that already?". Web Development has always intrested my creative side. Lucky for me coding lets me bring my ideas to life.</p>
+                </div>
+            </div>
+            <div class="eachSection">
+                <div class="eachContainer" id="skills">
+                    <h3 class="eachHeader">Skills</h3>
+                    <ul>
+                        <li class="skillsLi"> 
+                            <div class="skillsBorder">
+                                <img class="skillsImg" src="./images/images/icons8-html-5-480.png" alt="HTML Projects">
+                                <img class="skillsImg" src="./images/images/icons8-css3-480.png" alt="CSS">
+                                <img class="skillsImg" src="./images/images/icons8-javascript-filled-500.png" alt="Javascript">
+                            </div> 
+                            <h3 class="skillsTitle">HTML CSS Javascript</h3>
+                            <p class="skillsText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p> 
+                        </li>
+                        <li class="skillsLi">
+                            <span class="skillsBorder">
+                                <img class="skillsImg2" src="./images/images/icons8-nodejs-480.png" alt="HTML Projects">
+                            </span> 
+                            <h3 class="skillsTitle">NodeJS</h3>
+                            <p class="skillsText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>  
+                        </li>
+                        <li class="skillsLi">
+                            <span class="skillsBorder">
+                                <img class="skillsImg2" src="./images/images/icons8-react-native-filled-500.png" alt="HTML Projects">
+                            </span> 
+                            <h3 class="skillsTitle">React</h3>
+                            <p class="skillsText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                        </li>
+                        <li class="skillsLi">
+                            <span class="skillsBorder">
+                                <img class="skillsImg2" src="./images/images/icons8-mysql-logo-filled-500.png" alt="HTML Projects">
+                            </span> 
+                            <h3 class="skillsTitle">MySQL</h3>
+                            <p class="skillsText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                        </li>
+                        <li class="skillsLi">
+                            <span class="skillsBorder">
+                                <img class="skillsImg2" src="./images/images/icons8-mongodb-480.png" alt="HTML Projects">
+                            </span> 
+                            <h3 class="skillsTitle">MongoDB</h3>
+                            <p class="skillsText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="eachSection">
+                <div class="eachContainer" id="pastProjects">
+                    <h3 class="eachHeader">Past Projects</h3>
+                    <p class="preProjectText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                    <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
+                    <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
+                    <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
+                    <p class="postProjectText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam. Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                </div>
+            </div>
+            <div class="eachSection">
+                <div class="eachContainer">
+                    <h3 class="eachHeader">Github</h3>
+                    <p class="preProjectText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                    <ul>
+                        <li class="noDotsLi">
+                            <a href="" class="githubLink">
+                                <button class="textColor">View Github</button>
+                            </a>
+                        </li>
+                        <li class="noDotsLi">
+                            <a href="">
+                                <button></button>
+                            </a>
+                        </li>
+                        <li class="noDotsLi">
+                            <a href="" class="linkedInLink">
+                                <button > View LinkedIn</button>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="eachSection bottomBorderRad">
+                <div class="eachContainer" id="contact">
+                    <h3 class="eachHeader">Contact</h3>
+                    <div class="container">
+                        <form action="">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+                            <label for="fname">Email</label>
+                            <input type="text" id="fname" name="email" placeholder="Email">
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul class="footerLinks">
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#home">Home</a></li>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#aboutMe">About Me</a></li>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#skills">Skills</a></li>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#pastProjects">Portfolio</a></li>
+                <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#contact">Contact</a></li>
+                <li><a href="https://github.com/eddiedeans">Github</a></li>
+            </ul>
+        </div>
+        <div class="footerImg">
+            <div>
+                <a href="https://github.com/eddiedeans"> 
+                    <img href="https://github.com/eddiedeans" src="./images/images/icons8-github-filled-500.png" alt="Github Icon">
+                </a>
+            
+                <a href="https://www.linkedin.com/in/eddie-borja-70b8339b/"> 
+                    <img src="./images/images/icons8-linkedin-480.png" alt="LinkedIn Icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
