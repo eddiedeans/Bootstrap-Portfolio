@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
@@ -32,17 +33,19 @@
             </div> 
         </div>
         <div class="Container">
-            <div class="eachSection borderRad">
-                <img class="myHeadShot" src="./images/images/generic-placeholder-person.png" alt="person">
+            <div class="eachSection borderRad horizontal">
                 <div class="eachContainer" id="aboutMe">
-                    <h3 class="eachHeader">About Me</h3>
+                    <h3 class="eachHeader alignLeft">About Me</h3>
                     <p class="eachText">Hello, welcome to my site. My name is Eddie Borja. I spend alot of time on the internet and always find my self asking "Why hasn't anyone created a website for that already?". Web Development has always intrested my creative side. Lucky for me coding lets me bring my ideas to life.</p>
                 </div>
+                <span class="headshotContainer">
+                    <img class="myHeadShot" src="./images/images/portrait500.jpeg" alt="person">
+                </span>
             </div>
             <div class="eachSection">
                 <div class="eachContainer" id="skills">
                     <h3 class="eachHeader">Skills</h3>
-                    <ul>
+                    <ul class="skillsContainer">
                         <li class="skillsLi"> 
                             <div class="skillsBorder">
                                 <img class="skillsImg" src="./images/images/icons8-html-5-480.png" alt="HTML Projects">
@@ -80,6 +83,13 @@
                             <h3 class="skillsTitle">MongoDB</h3>
                             <p class="skillsText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
                         </li>
+                        <li class="skillsLi">
+                            <span class="skillsBorder">
+                                <img class="skillsImg2" src="./images/images/icons8-mongodb-480.png" alt="HTML Projects">
+                            </span> 
+                            <h3 class="skillsTitle">MongoDB</h3>
+                            <p class="skillsText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -87,25 +97,24 @@
                 <div class="eachContainer" id="pastProjects">
                     <h3 class="eachHeader">Past Projects</h3>
                     <p class="preProjectText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-                    <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
-                    <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
-                    <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
+                    <ul class="projectList">
+                        <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
+                        <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
+                        <img class="pastProjectImg" src="./images/images/generic-placeholder-person.png" alt="person">
+                    </ul>
                     <p class="postProjectText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam. Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
                 </div>
             </div>
             <div class="eachSection">
-                <div class="eachContainer">
-                    <h3 class="eachHeader">Github</h3>
-                    <p class="preProjectText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-                    <ul>
+                <div class="eachContainer githubHolder">
+                    <div class="githubContainer">
+                        <h3 class="eachHeader githubTitle">Github</h3>
+                        <p class="preProjectText">Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                    </div>
+                    <ul class="referenceLink">
                         <li class="noDotsLi">
                             <a href="" class="githubLink">
                                 <button class="textColor">View Github</button>
-                            </a>
-                        </li>
-                        <li class="noDotsLi">
-                            <a href="">
-                                <button></button>
                             </a>
                         </li>
                         <li class="noDotsLi">
@@ -121,7 +130,7 @@
                 <div class="eachContainer" id="contact">
                     <h3 class="eachHeader">Contact</h3>
                     <div class="container">
-                        <form action="">
+                        <!-- <form action="">
                             <label for="fname">Full Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -132,7 +141,24 @@
                             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                         
                             <input type="submit" value="Submit">
-                        </form>
+                        </form> -->
+                        <ul class="contactIconContainer">
+                            <li>
+                                <a href="" >
+                                    <i class="fas fa-envelope-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" >
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" >
+                                    <i class="fab fa-github-square"></i>
+                                </a>
+                            </li>
+                        </ul>
                       </div>
                 </div>
             </div>
@@ -146,7 +172,6 @@
                 <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#skills">Skills</a></li>
                 <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#pastProjects">Portfolio</a></li>
                 <li><a href="file:///Users/eddie/Documents/UCIBootcamp/Bootstrap-Portfolio/index.html#contact">Contact</a></li>
-                <li><a href="https://github.com/eddiedeans">Github</a></li>
             </ul>
         </div>
         <div class="footerImg">
@@ -154,7 +179,6 @@
                 <a href="https://github.com/eddiedeans"> 
                     <img href="https://github.com/eddiedeans" src="./images/images/icons8-github-filled-500.png" alt="Github Icon">
                 </a>
-            
                 <a href="https://www.linkedin.com/in/eddie-borja-70b8339b/"> 
                     <img src="./images/images/icons8-linkedin-480.png" alt="LinkedIn Icon">
                 </a>

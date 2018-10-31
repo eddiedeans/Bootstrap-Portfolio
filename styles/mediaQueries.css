@@ -1,62 +1,137 @@
 /* Media Queries */
 
-@media only screen and (min-width:600px) {
-    header .brandHeader {
-    margin: 31px 0;
-    text-align: left;
-    padding: 0px 20px 0px 40px;
-    border-right: 3px solid #000;
-    float: left;
-    line-height: 38px;
-    }
-
-    header nav ul {
-        margin: 20px 0 0 0px;
-        float: LEFT;
-    }
+@media only screen and (max-width: 768px) and (orientation: portrait) {
     
-    header nav ul li a{
-        
-        line-height: 60px;
+    .myHeadShot {
+        width: 50%;
     }
 
-    header .githubLink {
-        display: block;
-        font-family: 'Catamaran';
-        font-size: 16px;
-        color: #111;
-        font-weight: 0;
-        text-transform: uppercase;
-        line-height: 38px;
-        border: 3px solid #111;
-        float: right;
-        margin-right: 40px;
-        padding: 0 40px;
-        margin-top: 29.5px;
+    .eachSection{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
-@media only screen and (min-width:982px) {
-    .myHeadShot {
-        /* display: block; */
-        /* margin: auto; */
-        width: 30%;
-        /* margin-bottom: 2em; */
-        /* float: right; */
-    }
+@media only screen and (min-width: 768px) {
 
-    .eachSection {
-        background: #c4d1de;
-        width: 90%;
+    .Container {
+        /* background: #363636; */
+        background-image: none;
+        margin-top: -3em;
+    }
+    
+    main {
+        width: 64em;
+        max-width: calc(100% - 4em);
         margin: 0 auto;
-        border-bottom: 1px solid #9b9b9b;
-        box-shadow: 0px 12px 26px 3px rgba(0,0,0,0.75);
+    }
+    
+    .eachSection {
+        display: flex;
+        width: 100%;
     }
 
-    .eachContainer {
-        /* margin: 0em 2em 1em 2em; */
-        padding: 2em;
-        fl
+    .alignLeft {
+        text-align: left;
+
+    }
+
+    .alignLeft::after {
+        margin-left: 0;
+        width: 4.5em
         
     }
+
+
+    .headshotContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 5%; 
+        padding-top: 2em;
+        padding-bottom: 2em;  
+    }
+
+    .horizontal {
+        display: flex;
+        justify-content: center;
+    }
+
+    .vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .myHeadShot {
+        padding: 0;
+        width: 100%;
+    
+    }
+
+    .skillsImg {
+        height: 20%;
+        width: 20%;
+        display: inline-block;
+    }
+
+    .skillsImg2 {
+        height: 20%;
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
+
+    .skillsContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skillsLi {
+        width: 27%;
+        display: inline-block;
+        padding: 2%;
+        margin: .5%;
+    }
+
+    .projectList {
+        display: flex;
+    }
+    
+    .pastProjectImg {
+        display: inline-block;
+        width: 31%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .githubHolder {
+        display: flex;
+    }
+
+    .githubContainer {
+        display: inline-block;
+    }
+
+    .githubTitle {
+        margin-left: 0;
+        width: 4em; 
+    }
+
+    .referenceLink {
+        display: flex;
+        align-items: center; /* horizontal */
+        justify-content: center; /* vertical */
+    }
+
+    #contact {
+        width: 100%;
+    }
+
+    .footerImg a img {
+        width: 10%;
+        height: 10%; 
+        margin: 0 auto;
+    }
+
 }

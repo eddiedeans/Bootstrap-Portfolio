@@ -107,18 +107,18 @@ input, select {
     text-decoration: none;
 }
 
-/* body {
-    background: #f3f3f3;
-} */
+body {
+    background-image: linear-gradient(#363636, #fff);
+}
 
 header {
-    background: #363636;
+    /* background: #363636; */
     width: 100%;
     height: 100px;
 }
 
 header .brandHeader {
-    font-family: Catamaran;
+    font-family: "Catamaran";
     font-size: 24px;
     color: #f6f6f6;
     font-weight: 900;
@@ -133,6 +133,7 @@ header nav ul {
     margin: 0 auto;
     display: block;
     width: fit-content;
+    
 }
 
 header nav ul li {
@@ -143,16 +144,13 @@ header nav ul li {
 }
 
 header nav ul li a{
-    font-family: Catamaran;
+    font-family: "Catamaran";
     font-size: 16px;
     color: #f6f6f6;
     font-weight: 0;
     text-transform: uppercase;
 }
 
-header .githubLink {
-    display: none;
-}
 
 /* Banner */
 
@@ -164,6 +162,7 @@ header .githubLink {
     background-position: center;
     background-size: cover;
     display: table;
+    border-radius: 1em;
 }
 
 .verticalCenter {
@@ -212,28 +211,11 @@ header .githubLink {
 
 /* Sections */
 
-/* .linkContainer div {
-    margin: 16px 16px 0px;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #f2f2f2;
-}
-
-.linkContainer div h3 {
-    text-align: center;
-    font-family: Catamaran;
-    font-size: 28px;
-    color: #111;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 100px;
-} */
-
 /* About ME Section */
 .Container {
     /* background: #363636; */
     background-image: linear-gradient(#363636, #fff);
-    padding: 5%;
+    padding-top: 2%;
 }
 
 .eachSection {
@@ -245,19 +227,18 @@ header .githubLink {
 }
 
 .borderRad {
-    border-top-left-radius: .50em;
-    border-top-right-radius: .50em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .bottomBorderRad {
-    border-bottom-left-radius: .50em;
-    border-bottom-right-radius: .50em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    /* margin-bottom: 20%; */
 }
 
 .eachContainer {
-    /* margin: 0em 2em 1em 2em; */
     padding: 2em;
-    
 }
 
 .eachHeader {
@@ -267,6 +248,7 @@ header .githubLink {
     color: #111;
     font-weight: 400;
     text-transform: uppercase;
+    margin: 0 0 .7em 0;
 }
 
 .eachHeader::after {
@@ -290,11 +272,13 @@ header .githubLink {
     text-align: center;
 }
 
+
 .myHeadShot {
     display: block;
     margin: auto;
+    padding: 2em;
     width: 40%;
-    margin-bottom: 2em;
+    border-radius: 50%;
 }
 
 /* Skills */
@@ -351,8 +335,8 @@ header .githubLink {
 .pastProjectImg {
     display: block;
     margin: auto;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     margin-top: 0px;
 }
 
@@ -411,6 +395,7 @@ header .githubLink {
 
 .noDotsLi {
     list-style-type: none;
+    margin: 1em;
 }
 
 .textColor {
@@ -418,39 +403,59 @@ header .githubLink {
 }
 
 /* Contact Area */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+/* input[type=text], select, textarea { */
+    /* width: 100%; Full width */
+    /* padding: 12px; Some padding   */
+    /* border: 1px solid #ccc; Gray border */
+    /* border-radius: 4px; Rounded borders */
+    /* box-sizing: border-box; Make sure that padding and width stays in place */
+    /* margin-top: 6px; Add a top margin */
+    /* margin-bottom: 16px; Bottom margin */
+    /* resize: vertical Allow the user to vertically resize the textarea (not horizontally) */
+/* } */
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+/* input[type=submit] {
     background-color: #0077B5;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+} */
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+/* input[type=submit]:hover {
     background-color: #45a049;
-}
+} */
 
 /* Add a background color and some padding around the form */
-.container {
+/* .container {
     border-radius: 5px;
     background-color: #363636;
     padding: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #f6f6f6
+} */
+
+/* Contact */
+
+.contactIconContainer {
+    display: flex;
+}
+
+.contactIconContainer li {
+    display: inline-block;
+    width: 33%;
+    
+}
+
+.contactIconContainer li a i {
+    width: 100%;
+    height: 100%;
+    color: #ee4266;
+    text-align: center;
+    font-size: 3em;
 }
 
 /* footer */
@@ -460,7 +465,6 @@ footer {
     padding: 40px 40px;
     background-image: linear-gradient(to top,#363636, #fff);
     overflow: hidden;
-    margin-top: 5%;
 }
 
 footer div ul {
@@ -489,7 +493,7 @@ footer div ul li a {
 }
 
 .footerImg a img {
-    width: 30%;
-    height: 30%; 
+    width: 20%;
+    height: 20%; 
     margin: 0 auto;
 }
